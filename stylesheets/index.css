@@ -2,15 +2,87 @@
     margin: 0;
     padding: 0;
 }
-
-@media screen and (min-width:1024px) {
-  .aside-sp{
-    display: none;
-  }
+/* ヘッダー */
+/* スマホ用ヘッダー */
+@media screen and (min-width:300px) {
+  aside{
+    width: 100%;
+    height: 100vh;
+    background-color: #fafa02cc;
+    position: absolute;
+    top: -100vh;
+    transition: top 0.3s 0s ease-in-out;
+    z-index: 2;
 }
 
+　aside.is-open{
+    top: 0;
+}
+
+.aside-sp>nav{
+    margin-top: 15vh;
+}
+.aside-sp-nav-item{
+    width: 100%;
+    height: 10vh;
+}
+.aside-sp-nav-item>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 36px;
+    color: #4F2111;
+    text-align: center;
+}
 .header-nav {
-    background-color: green;
+  display: none;
+}
+.header-sp{
+  width: 20%;
+  height: 10vh;
+  left: 80%;
+  position: absolute;
+  z-index: 5;
+  background-color: #fafa02;
+}
+.header-sp>div{
+  height: 1px;
+  width: 60px;
+  margin: 0 auto;
+  background-color: #4F2111;
+  transition: all ease-in-out 0.3s;
+}
+.header-sp-upper{
+  position: relative;
+  top: -20%;
+}
+.header-sp-bottom{
+  position: relative;
+  top: 20%;
+}
+.header-sp-upper.is-open{
+  transform: rotate(45deg);
+  top: 0;
+}
+.header-sp-middle.is-open{
+  display: none;
+}
+.header-sp-bottom.is-open{
+  transform: rotate(-45deg);
+  top: 0;
+}
+}
+
+  
+/* PC版ヘッダー */
+@media screen and (min-width:1024px) {
+　.aside-sp {
+  display: none
+}
+
+  .header-nav {
+    background-color: #589D79;
     position: fixed;
     height: 10vh;
     width: 100%;
@@ -29,16 +101,19 @@
     color: #fff;
     text-decoration: none;
   }
-  
-  a:hover {
-    color: #f00;
+
+  .header-sp {
+    display: none;
   }
+}
   
+/* スマホ用 */
   #first-block {
     background-image: url("../images/first-back.png");
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    padding-top: 10%;
   
     display: flex;
     justify-content: center;
@@ -63,8 +138,16 @@
     color: #444;
   }
 
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
   h5 {
-    font-size: 40px;
+    font-size: 25px;
   }
   
   h6 {
@@ -88,8 +171,7 @@
     padding-right: 50px;
     padding-bottom: 5px;
     width: 80%;
-    height: 550px;
-    background: #EFE4B8 0% 0% no-repeat padding-box;
+    background: #EFE4B8;
     border: 5px solid #9C3F3F;
     opacity: 1;
   }
@@ -155,65 +237,54 @@
   
   #fourth-block {
     text-align: center;
+    background-color: #589D79;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .card-first {
-    width: 362px;
-    height: 500px;
-    background-image: url("../images/back6.jpg.png");
-    margin-left: 50px;
+  .shop-info {
+    background-color: #FFFFFF;
+    margin: 5%;
+  }
+
+  .card-firstline {
+    display: flex;
+  }
+  
+  .card-secondline {
+    display: flex;
+    justify-content: center;
+  }
+
+  .shop-card {
+    margin: 2%;
+    width: 30%;
+    background-color: #EFE4B8;
   }
 
   .card-img {
-    width: 100%;
+    width: 90%;
   }
 
-  .card-second {
-    width: 362px;
-    height: 514px;
-    background-image: url("../images/back1.jpg");
-    margin-left: 50px;
+  .card-text {
+    margin-bottom: 5vh;
   }
 
-  .card-third {
-    width: 380px;
-    height: 514px;
-    background-image: url("../images/back3.jpg");
-    margin-left: 50px;
-  }
-
-  .card-fourth {
-    width: 380px;
-    height: 514px;
-    background-image: url("../images/back3.jpg");
-    margin-left: 50px;
-  }
-
-  .card-fifth {
-    width: 362px;
-    height: 500px;
-    background-image: url("../images/back6.jpg.png");
-    margin-left: 50px;
-  }
-
-  #fifth-block {
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .card-address {
+    margin-bottom: 5vh;
   }
 
   .craft-index {
     width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .craft {
+  .craft-card {
     display: flex;
     margin-left: 30px;
   }
@@ -226,9 +297,8 @@
     font-size: 25px;
   }
 
-  #sixth-block {
-    background-image: url("../images/kaikousha1.jpg");
-    background-size: cover;
+  #fifth-block {
+    background-color: #589D79;
     width: 100%;
     height: 700px;
 
@@ -238,10 +308,10 @@
   }
 
   .map-container {
-    background: #FFFFFFA8 0% 0% no-repeat padding-box;
+    background-color: #EFE4B8;
     border: 5px solid #9C3F3F;
     opacity: 1;
-    width: 90vw;
+    width: 70%;
     margin: 30px;
     padding: 20px;
 
@@ -263,7 +333,7 @@
   }
 
   .note-container{
-    background: #D8DDDAD6 0% 0% no-repeat padding-box;
+    background:#EFE4B8;
     border: 5px solid #9C3F3F;
     opacity: 1;
     padding: 20px;
