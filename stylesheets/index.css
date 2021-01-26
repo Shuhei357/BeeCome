@@ -5,22 +5,23 @@
 /* ヘッダー */
 /* スマホ用ヘッダー */
 @media screen and (min-width:300px) {
-  aside{
+aside{
     width: 100%;
     height: 100vh;
-    background-color: #fafa02cc;
+    background-image: url("../images/first-back-s.png");
     position: absolute;
     top: -100vh;
     transition: top 0.3s 0s ease-in-out;
     z-index: 2;
 }
 
-　aside.is-open{
+aside.is-open{
     top: 0;
 }
 
 .aside-sp>nav{
     margin-top: 15vh;
+    background-color: #FFFFFF;
 }
 .aside-sp-nav-item{
     width: 100%;
@@ -73,11 +74,10 @@
   top: 0;
 }
 }
-
   
-/* PC版ヘッダー */
+/* PC用ヘッダー */
 @media screen and (min-width:1024px) {
-　.aside-sp {
+.aside-sp {
   display: none
 }
 
@@ -107,9 +107,38 @@
   }
 }
   
+h1 {
+  font-size: 60px;
+  font-family: serif;
+  color: #444;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: serif;
+  color: #444;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
 /* スマホ用 */
+@media screen and (min-width:300px) {
   #first-block {
-    background-image: url("../images/first-back.png");
+    background-image: url("../images/first-back-s.png");
     background-size: cover;
     width: 100%;
     height: 80vh;
@@ -125,35 +154,63 @@
     width: 90vw;
     height: 70vh;
   }
+}
+ /* PC用 */
+@media screen and (min-width:1024px) {
+  #first-block {
+    background-image: url("../images/first-back-pc.png");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding-top: 10%;
   
-  h1 {
-    font-size: 60px;
-    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-container {
+    text-align: center;
+    width: 90vw;
+    height: 70vh;
+  }
+}
+
+  /* スマホ用 */
+@media screen and (min-width:300px) {
+  #second-block {
+    background-color: #589D79;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .movie-container {
+    align-items: center;
+    width: 90%;
+    background: #EFE4B8;
+    border: 5px solid #9C3F3F;
+  }
+  
+  .YouTube-image{
+    width: 70%;
+  }
+
+  .info-text {
+    font-size: 1.3vw;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    padding-bottom: 2vh;
     color: #444;
+    text-align: left;
   }
-  
-  h2 {
-    font-size: 30px;
-    font-family: serif;
-    color: #444;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-
-  h5 {
-    font-size: 25px;
-  }
-  
-  h6 {
-    font-size: 15px;
-  }
-  
+}
+  /* PC用 */
+@media screen and (min-width:1024px) {
   #second-block {
     background-color: #589D79;
     text-align: center;
@@ -177,16 +234,7 @@
   }
   
   .YouTube-image{
-    width: 70vw;
-    height: 30vh;
-  }
-
-  .info-title {
-    font-size: 30px;
-    font-family: serif;
-    margin-bottom: 3px;
-    color: #444;
-    text-align: center;
+    width: 70%;
   }
   
   .info-text {
@@ -195,7 +243,39 @@
     color: #444;
     text-align: left;
   }
+}
   
+  /* スマホ用 */
+@media screen and (min-width:300px) {
+  #third-block {
+    background-color: #589D79;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .build-container {
+    align-items: center;
+    width: 90%;
+    background: #EFE4B8;
+    border: 5px solid #9C3F3F;
+  }
+  
+  .build-text {
+    font-size: 1.3vw;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    padding-bottom: 2vh;
+    color: #444;
+    text-align: left;
+  }
+}
+  /* PC用 */
+@media screen and (min-width:1024px) {
   #third-block {
     background-color: #589D79;
     text-align: center;
@@ -215,17 +295,8 @@
     margin-bottom: 5px;
     width: 80%;
     height: 550px;
-    background: #EFE4B8 0% 0% no-repeat padding-box;
+    background: #EFE4B8;
     border: 5px solid #9C3F3F;
-    opacity: 1;
-  }
-  
-  .build-title {
-    font-size: 30px;
-    font-family: serif;
-    margin-bottom: 3px;
-    color: #444;
-    text-align: center;
   }
   
   .build-text {
@@ -233,8 +304,10 @@
     margin: 10px, 10px, 10px, 10px;
     color: #444;
     text-align: left;
-  } 
-  
+  }
+}
+  /* スマホ用 */
+@media screen and (min-width:300px) {
   #fourth-block {
     text-align: center;
     background-color: #589D79;
@@ -248,15 +321,113 @@
     margin: 5%;
   }
 
-  .card-firstline {
+  .accbox {
+    margin: 1vh 0;
+    padding: 0;
+    max-width: 400px;
+}
+  .accbox label {
+    display: block;
+    margin: 1vh 3vh;
+    padding : 11px 12px;
+    color :#000000;
+    border: 2px solid #000000;
+    font-weight: bold;
+    background :#ffffff;
+    cursor :pointer;
+    transition: all 0.5s;
+  }
+
+  .accbox input {
+    display: none;
+  }
+
+  .accbox .card-firstline-s {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+  }
+
+  .cssacc:checked + .card-firstline-s {
+    height: auto;
+    background: #ffffff;
+    opacity: 1;
+  }
+
+  .accbox .craft-index {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+  }
+
+  .cssacc:checked + .craft-index {
+    height: auto;
+    background: #ffffff;
+    opacity: 1;
+  }
+  .card-firstline-s {
+    background-color: #FFFFFF;
+  }
+  
+  .shop-card {
+    width: 100%;
+    background-color: #EFE4B8;
+  }
+
+  .card-img {
+    width: 90%;
+  }
+
+  .card-text {
+    margin-bottom: 5vh;
+  }
+
+  .craft-index {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .craft-card {
+    margin: 0;
+  }
+
+  .craft-info {
+    margin: 0;
+  }
+
+  .craft-title {
+    font-size: 25px;
+  }
+}
+  
+  /* PC用 */
+@media screen and (min-width:1024px) {
+  #fourth-block {
+    text-align: center;
+    background-color: #589D79;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shop-info {
+    background-color: #FFFFFF;
+    margin: 5%;
+  }
+
+  .card-firstline-pc {
     display: flex;
   }
   
-  .card-secondline {
-    display: flex;
-    justify-content: center;
-  }
-
   .shop-card {
     margin: 2%;
     width: 30%;
@@ -296,7 +467,57 @@
   .craft-title {
     font-size: 25px;
   }
+}
+  /* スマホ用 */
+@media screen and (min-width:300px) {
+  #fifth-block {
+    background-color: #589D79;
+    width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container {
+    background-color: #EFE4B8;
+    border: 5px solid #9C3F3F;
+    width: 70%;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .map-container>h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .map-container-main {
+    margin: 0%;
+    text-align: center;
+    }
+
+  .map-container-main>p{
+    margin: 0%;
+  }
+  .map-container-main>img {
+    text-align: center;
+    }
+
+  .note-container{
+    background:#EFE4B8;
+    border: 5px solid #9C3F3F;
+    padding: 20px;
+    width: 70%;
+    align-items: center;
+  }
+
+  .note-container>h4 {
+    font-size: 20px;
+  }
+}
+  /* PC用 */
+@media screen and (min-width:1024px) {
   #fifth-block {
     background-color: #589D79;
     width: 100%;
@@ -310,7 +531,6 @@
   .map-container {
     background-color: #EFE4B8;
     border: 5px solid #9C3F3F;
-    opacity: 1;
     width: 70%;
     margin: 30px;
     padding: 20px;
@@ -335,7 +555,6 @@
   .note-container{
     background:#EFE4B8;
     border: 5px solid #9C3F3F;
-    opacity: 1;
     padding: 20px;
 
     display: flex;
@@ -346,6 +565,7 @@
   .note-container>h4 {
     font-size: 20px;
   }
+}
 
   footer {
     display: flex;
