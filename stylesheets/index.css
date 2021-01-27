@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 /* ヘッダー */
 /* スマホ用ヘッダー */
@@ -109,14 +110,12 @@ aside.is-open{
   
 h1 {
   font-size: 60px;
-  font-family: serif;
-  color: #444;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
-  font-size: 30px;
-  font-family: serif;
-  color: #444;
+  font-size: 3.5vw;
+  color: rgb(0, 0, 0);
 }
 
 h3 {
@@ -191,22 +190,20 @@ h6 {
   
   .movie-container {
     align-items: center;
-    width: 90%;
+    width: 85%;
     background: #EFE4B8;
     border: 5px solid #9C3F3F;
   }
   
   .YouTube-image{
-    width: 70%;
+    width: 55%;
   }
 
   .info-text {
-    font-size: 1.3vw;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    padding-bottom: 2vh;
-    color: #444;
-    text-align: left;
+    font-size: 3vw;
+    padding: 2vh 12%;
+    color: rgb(0, 0, 0);
+    text-align: center;
   }
 }
   /* PC用 */
@@ -214,8 +211,8 @@ h6 {
   #second-block {
     background-color: #589D79;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 12vh;
+    padding-bottom: 7vh;
 
     display: flex;
     justify-content: center;
@@ -224,24 +221,20 @@ h6 {
   
   .movie-container {
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    width: 80%;
+    width: 85%;
     background: #EFE4B8;
     border: 5px solid #9C3F3F;
-    opacity: 1;
   }
   
   .YouTube-image{
-    width: 70%;
+    width: 55%;
   }
   
   .info-text {
-    font-size: 1.3vw;
-    margin: 10px, 10px, 10px, 10px;
-    color: #444;
-    text-align: left;
+    font-size: 3vw;
+    padding: 2vh 12%;
+    color: rgb(0, 0, 0);
+    text-align: center;
   }
 }
   
@@ -254,24 +247,28 @@ h6 {
     padding-bottom: 2vh;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   
   .build-container {
     align-items: center;
-    width: 90%;
+    padding-bottom: 3vh; 
+    width: 85%;
     background: #EFE4B8;
     border: 5px solid #9C3F3F;
   }
+
+  .build-container>p {
+    margin-top: 3vh;
+  }
   
-  .build-text {
-    font-size: 1.3vw;
-    padding-right: 4vh;
-    padding-left: 4vh;
-    padding-bottom: 2vh;
-    color: #444;
-    text-align: left;
+  .button {
+    color: #000;
+    background-color: #FFFFFF;
+    padding: 1vh;
+    border: solid #000;
+    border-radius: 100vh;
   }
 }
   /* PC用 */
@@ -279,31 +276,33 @@ h6 {
   #third-block {
     background-color: #589D79;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 12vh;
+    padding-bottom: 7vh;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   
   .build-container {
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    width: 80%;
-    height: 550px;
+    padding-bottom: 3vh; 
+    width: 85%;
     background: #EFE4B8;
     border: 5px solid #9C3F3F;
   }
+
+  .build-container>p {
+    margin-top: 3vh;
+  }
   
-  .build-text {
-    font-size: 1.3vw;
-    margin: 10px, 10px, 10px, 10px;
-    color: #444;
-    text-align: left;
+  .button {
+    color: #000;
+    background-color: #FFFFFF;
+    padding: 1vh;
+    margin-bottom: 5%;
+    border: solid #000;
+    border-radius: 100vh;
   }
 }
   /* スマホ用 */
@@ -318,13 +317,13 @@ h6 {
 
   .shop-info {
     background-color: #FFFFFF;
+    width: 90%;
     margin: 5%;
   }
 
   .accbox {
-    margin: 1vh 0;
     padding: 0;
-    max-width: 400px;
+    width: 100%;
 }
   .accbox label {
     display: block;
@@ -421,6 +420,7 @@ h6 {
 
   .shop-info {
     background-color: #FFFFFF;
+    width: 90%;
     margin: 5%;
   }
 
@@ -430,7 +430,7 @@ h6 {
   
   .shop-card {
     margin: 2%;
-    width: 30%;
+    width: 90%;
     background-color: #EFE4B8;
   }
 
